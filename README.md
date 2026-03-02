@@ -28,6 +28,17 @@
 [![Download APK](https://img.shields.io/badge/Download-Latest_APK-blue?style=for-the-badge&logo=android)](https://github.com/CoderBDK/Taqwa-Journey/releases/download/v1.1.0/taqwa-journey-v1.1.0.apk)
 
 > *দ্রষ্টব্য: এটি বর্তমানে ডেভেলপমেন্ট পর্যায়ে আছে। ইনশাআল্লাহ সামনে আরও ফিচার যুক্ত হবে।*
+## 📸 Preview
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/5abbabaa-0c24-46be-b429-ea57ad325459" alt="Screenshot 1" width="300" />
+  <img src="https://github.com/user-attachments/assets/36b1c657-b6f1-467a-982d-4331d642dc56" alt="Screenshot 2" width="300" />
+  <img src="https://github.com/user-attachments/assets/bcbad897-79d1-4844-a771-a26163041b5c" alt="Screenshot 3" width="300" />
+  <img src="https://github.com/user-attachments/assets/2903adf1-9f12-4cd5-906a-c0e249c6de39" alt="Screenshot 4" width="300" />
+  <img src="https://github.com/user-attachments/assets/f95b74ff-a95f-4dc0-9efc-fcc94999b9b0" alt="Screenshot 5" width="300" />
+  <img src="https://github.com/user-attachments/assets/d5abb5be-c6c4-4fb3-ad0a-c627d653d29c" alt="Screenshot 6" width="300" />
+
+</div>
 
 ---
 ## 🛠️ ফিডব্যাক ও যোগাযোগ
