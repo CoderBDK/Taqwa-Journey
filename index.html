@@ -40,7 +40,24 @@
         }
         h1 { margin: 0; font-size: 2.5em; }
         p.tagline { font-size: 1.2em; opacity: 0.9; margin-top: 10px; }
-        
+         .version {
+            font-size: 0.4em;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-left: 15px;
+            vertical-align: middle;
+        }
+
+        .platform-badge {
+            margin: 15px 0;
+            font-size: 1em;
+            color: var(--android-color);
+            background: rgba(255, 255, 255, 0.1);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
         .download-btn {
             display: inline-block;
             background-color: var(--accent-color);
@@ -86,9 +103,20 @@
 
     <header>
         <div class="container">
-            <h1>Taqwa Journey</h1>
+            <h1>Taqwa Journey <span class="version">v1.1.0</span></h1>
             <p class="tagline">তাকওয়া অর্জনের পথে আপনার প্রতিদিনের সঙ্গী</p>
-            <a href="https://github.com/CoderBDK/Taqwa-Journey/releases/download/v1.1.0/taqwa-journey-v1.1.0.apk" class="download-btn">ডাউনলোড করুন (APK)</a>
+
+            <div class="platform-badge"
+                style="display: inline-flex; align-items: center; gap: 8px; margin: 15px 0; color: #3DDC84; font-weight: bold;">
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg"
+                    alt="Android Logo" style="width: 24px; height: auto; vertical-align: middle;">
+
+                <span>Android 7.0+</span>
+            </div>
+            <br>
+            <a href="https://github.com/CoderBDK/Taqwa-Journey/releases/download/v1.1.0/taqwa-journey-v1.1.0.apk"
+                class="download-btn">ডাউনলোড করুন (APK)</a>
         </div>
     </header>
 
