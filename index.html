@@ -78,7 +78,101 @@
             transition: transform 0.3s;
         }
         .download-btn:hover { transform: scale(1.05); }
+   .slider-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
 
+        .slider-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            gap: 20px;
+            padding: 20px 60px;
+            scrollbar-width: none;
+        }
+
+        .slider-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .slide {
+            flex: 0 0 auto;
+            height: 400px;
+            width: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            scroll-snap-align: center;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 15px;
+            animation: zoom 0.3s;
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0.5)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+            background: white;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            border: none;
+        }
+
+        .prev-btn {
+            left: 5px;
+        }
+
+        .next-btn {
+            right: 5px;
+        }
         .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -127,6 +221,22 @@
                 class="download-btn">ডাউনলোড করুন (APK)</a>
         </div>
     </header>
+    
+  <div class="slider-wrapper">
+        <button class="nav-btn prev-btn" onclick="scrollSlider(-300)">&#10094;</button>
+        <div class="slider-container" id="slider">
+            <img src="https://github.com/user-attachments/assets/5abbabaa-0c24-46be-b429-ea57ad325459" class="slide" alt="Screenshot 1" >
+            <img src="https://github.com/user-attachments/assets/36b1c657-b6f1-467a-982d-4331d642dc56" class="slide" alt="Screenshot 2">
+            <img src="https://github.com/user-attachments/assets/bcbad897-79d1-4844-a771-a26163041b5c" class="slide" alt="Screenshot 3">
+            <img src="https://github.com/user-attachments/assets/2903adf1-9f12-4cd5-906a-c0e249c6de39" class="slide" alt="Screenshot 4">
+        </div>
+        <button class="nav-btn next-btn" onclick="scrollSlider(300)">&#10095;</button>
+    </div>
+    
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="full-img">
+    </div>
 
     <div class="container">
         <div class="features">
@@ -158,5 +268,37 @@
         &copy; 2026 Taqwa Journey | Developed with ❤️ for the Ummah
     </footer>
 
+     <script>
+        const lightbox = document.getElementById('lightbox');
+        const fullImg = document.getElementById('full-img');
+        const slides = document.querySelectorAll('.slide');
+        const closeBtn = document.querySelector('.close');
+
+        slides.forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                fullImg.src = img.src;
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target !== fullImg) {
+                lightbox.style.display = 'none';
+            }
+        });
+
+        function scrollSlider(direction) {
+            const container = document.getElementById('slider');
+            container.scrollBy({
+                left: direction,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    
 </body>
 </html>
