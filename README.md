@@ -1,7 +1,14 @@
+> ⚠️ **নোটিশ:** 
+> এই প্রজেক্টটি নতুন রিপোজিটরিতে শিফট করা হয়েছে। লেটেস্ট রিলিজ ও আপডেটের জন্য অনুগ্রহ করে আমাদের নতুন রিপোজিটরি ভিজিট করুন:  
+> **[New Taqwa Journey Repository](https://github.com/TaqwaJourneyApp/taqwajourneyapp.github.io)**
+
+---
+
 **উম্মাহর কল্যাণে একটি ক্ষুদ্র প্রচেষ্টা**
 
 ![App Badge](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Android](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android)
+[![New Repo](https://img.shields.io/badge/GitHub-New_Repository-181717?style=for-the-badge&logo=github)](https://github.com/TaqwaJourneyApp/taqwajourneyapp.github.io)
 
 **Taqwa Journey (তাকওয়া জার্নি)** আপনার প্রতিদিনের আত্মিক উন্নতির এক বিশ্বস্ত মাধ্যম এবং এটি আপনার পরকালীন সফরের এক বিনয়ী সঙ্গী। একজন মুসলিম হিসেবে দৈনন্দিন জীবনে তাকওয়া বজায় রাখা এবং নিজের আমলকে গুছিয়ে নেওয়ার লক্ষ্যেই এই অ্যাপটি তৈরি করা হয়েছে।
 
@@ -25,16 +32,16 @@
 ## 📥 ডাউনলোড করুন (Download)
 আপনি নিচের বাটনটি ক্লিক করে অ্যাপটির লেটেস্ট ভার্সন ডাউনলোড করতে পারেন:
 
-[![Download APK](https://img.shields.io/badge/Download-Latest_APK-blue?style=for-the-badge&logo=android)](https://github.com/CoderBDK/Taqwa-Journey/releases/download/v1.1.0/taqwa-journey-v1.1.0.apk)
+[![Download APK](https://img.shields.io/badge/Download-Latest_APK-blue?style=for-the-badge&logo=android)](https://taqwajourneyapp.github.io/)
 
 > *দ্রষ্টব্য: এটি বর্তমানে ডেভেলপমেন্ট পর্যায়ে আছে। ইনশাআল্লাহ সামনে আরও ফিচার যুক্ত হবে।*
 ## 📸 Preview
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/a88dbde5-9fbc-4591-999e-723d055732bf" alt="Screenshot 1" width="300" />
-  <img src="https://github.com/user-attachments/assets/a6899d08-23df-4c97-b9db-a0f0ae448cae" alt="Screenshot 2" width="300" />
-  <img src="https://github.com/user-attachments/assets/713cc0b1-6ee7-4caf-bed2-0fc37fe259bd" alt="Screenshot 3" width="300" />
-  <img src="https://github.com/user-attachments/assets/a56265d4-4d68-474b-818d-399cf2623345" alt="Screenshot 4" width="300" />
+  <img src="https://github.com/user-attachments/assets/a88dbde5-9fbc-4591-999e-723d055732bf" alt="Screenshot 1" width="23%" />
+  <img src="https://github.com/user-attachments/assets/a6899d08-23df-4c97-b9db-a0f0ae448cae" alt="Screenshot 2" width="23%" />
+  <img src="https://github.com/user-attachments/assets/713cc0b1-6ee7-4caf-bed2-0fc37fe259bd" alt="Screenshot 3" width="23%" />
+  <img src="https://github.com/user-attachments/assets/a56265d4-4d68-474b-818d-399cf2623345" alt="Screenshot 4" width="23%" />
 </div>
 
 ---
@@ -48,7 +55,6 @@
 
 ## 🛡️ ডেভলপমেন্ট আপডেট
 - **প্রযুক্তি:** Kotlin, Jetpack Compose
-- **সংস্করণ:** 1.1.0
 
 ---
 Developed with ❤️ for the Ummah.
